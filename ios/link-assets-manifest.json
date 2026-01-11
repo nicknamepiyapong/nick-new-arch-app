@@ -1,0 +1,77 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/shared/assets/fonts/Sarabun-Italic.ttf",
+      "sha1": "5b4c6d91b4db993bee4cbfff73711f0fbdf74fc5"
+    },
+    {
+      "path": "src/shared/assets/fonts/Kanit-SemiBold.ttf",
+      "sha1": "685f31da01135a32ca173508fbdc578a10c0182e"
+    },
+    {
+      "path": "src/shared/assets/fonts/Kanit-Black.ttf",
+      "sha1": "015e96e743a2d3da2d9f7ea4574a8157855195b3"
+    },
+    {
+      "path": "src/shared/assets/fonts/Kanit-Regular.ttf",
+      "sha1": "b7ab67cf839296fe86edcdef9d38e6ee6b21c963"
+    },
+    {
+      "path": "src/shared/assets/fonts/Kanit-Italic.ttf",
+      "sha1": "4fa3d471965e0a3158e30c6a6962a3e348c972a5"
+    },
+    {
+      "path": "src/shared/assets/fonts/Sarabun-ExtraBold.ttf",
+      "sha1": "566c839d90bf4081fca873f21ab0907a1e1ba158"
+    },
+    {
+      "path": "src/shared/assets/fonts/Sarabun-ExtraLight.ttf",
+      "sha1": "558a20db59814b5ac98ae3f44b2bf04a1cc23b45"
+    },
+    {
+      "path": "src/shared/assets/fonts/Sarabun-Thin.ttf",
+      "sha1": "ea7f8f4614d4f9f28b891b683c5668067119cf8d"
+    },
+    {
+      "path": "src/shared/assets/fonts/Kanit-Thin.ttf",
+      "sha1": "0d4ab6be42b97f1a05bcefd7f062bbeb1fe062dd"
+    },
+    {
+      "path": "src/shared/assets/fonts/Kanit-ExtraBold.ttf",
+      "sha1": "312a0ad8242415495f8487211b95fc23103c6123"
+    },
+    {
+      "path": "src/shared/assets/fonts/Sarabun-Regular.ttf",
+      "sha1": "4d0e05bfd5b6ff3fa880966e7b556fb12c839cae"
+    },
+    {
+      "path": "src/shared/assets/fonts/Kanit-Bold.ttf",
+      "sha1": "778504447a3fbfef9ecdef77cf7533d6b5d863f5"
+    },
+    {
+      "path": "src/shared/assets/fonts/Sarabun-Bold.ttf",
+      "sha1": "c66ca1350e45afac9169cadfce0ea663137c018b"
+    },
+    {
+      "path": "src/shared/assets/fonts/Sarabun-SemiBold.ttf",
+      "sha1": "f18037628bb753c0124f62893f601b3f989c6630"
+    },
+    {
+      "path": "src/shared/assets/fonts/Kanit-Light.ttf",
+      "sha1": "a5157c63249a6431d23c4ed01348f08443ddeb4b"
+    },
+    {
+      "path": "src/shared/assets/fonts/Sarabun-Medium.ttf",
+      "sha1": "da550089cbfe49d406cc261cb4c9b5a1af72e7d7"
+    },
+    {
+      "path": "src/shared/assets/fonts/Sarabun-Light.ttf",
+      "sha1": "78f92a8e923b2eb43e2105687aaff9dd0629cf3f"
+    },
+    {
+      "path": "src/shared/assets/fonts/Kanit-Medium.ttf",
+      "sha1": "8a4bca85a38a54e34d11bb26e3cf864865cf4de6"
+    }
+  ]
+}

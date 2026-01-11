@@ -7,24 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B718BE9FBF149D4943453F8 /* Sarabun-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EAB919B8BAD4E958DEFD286 /* Sarabun-SemiBold.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-nickNewArchApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-nickNewArchApp.a */; };
+		11FE3C5721014C7CB5E4F7D7 /* Kanit-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F02F1E434BA1457081784FCC /* Kanit-Light.ttf */; };
+		1326A74C3CB44307AEF5781E /* Kanit-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F613609334764C5CB6543444 /* Kanit-Thin.ttf */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		1DC56DDA4C5E404CAE1AB063 /* Kanit-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 742D29B0FFBA47EDBBCBFAFA /* Kanit-Bold.ttf */; };
 		3725CF9DCF08FBD410B84B6E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		438B768E96CE45A79EB95B57 /* Kanit-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 310DA94C047845AC977ED37E /* Kanit-ExtraBold.ttf */; };
+		4817DC7711E8450A9F098043 /* Sarabun-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 101A3BF65BE74D22944DE8EE /* Sarabun-Regular.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		7BFD5DFB018B445F80121234 /* Sarabun-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE2E6359F69D480293B5B561 /* Sarabun-Thin.ttf */; };
+		7E8C0FFEDD7C49B48E1C4B65 /* Kanit-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71FFD015B7A348F0B2CB8ED4 /* Kanit-Italic.ttf */; };
+		80B9F203DF27446FAA78F2A4 /* Sarabun-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC4B6C6A930347268A87BEF4 /* Sarabun-Light.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		85214B9DE0954884A081C226 /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEFCEBC49EAE4C41B6E71D5E /* Kanit-Medium.ttf */; };
+		86EBF0190DDE486D9550174C /* Kanit-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B69467E0D3243478E955084 /* Kanit-Black.ttf */; };
+		CF15E02F34B249B2916B6270 /* Sarabun-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 847AD234AEEE48CF9E4108E8 /* Sarabun-ExtraBold.ttf */; };
+		D26C3798CF9146BF8AAC2E60 /* Sarabun-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5893036F39C84AF99D1E7B1A /* Sarabun-Bold.ttf */; };
+		D6C9CF1D7AAD495983DCC356 /* Sarabun-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47A9F7E38DD34AFF84603233 /* Sarabun-Medium.ttf */; };
+		DAB8686D61C8470FA296B27B /* Kanit-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D044B45E57C4C3BBE615C5B /* Kanit-SemiBold.ttf */; };
+		DDCB58C199E7496395912937 /* Sarabun-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E379CAB006C049FA81E8911F /* Sarabun-ExtraLight.ttf */; };
+		E07A15D157E24B63987942B8 /* Kanit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 790F0312477C4F57B6F1A00B /* Kanit-Regular.ttf */; };
+		E9F01BE9F46A4F0A9961D648 /* Sarabun-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87415078F8A242D4A144D517 /* Sarabun-Italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		101A3BF65BE74D22944DE8EE /* Sarabun-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Sarabun-Regular.ttf"; path = "../src/shared/assets/fonts/Sarabun-Regular.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* nickNewArchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nickNewArchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = nickNewArchApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = nickNewArchApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = nickNewArchApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		2EAB919B8BAD4E958DEFD286 /* Sarabun-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Sarabun-SemiBold.ttf"; path = "../src/shared/assets/fonts/Sarabun-SemiBold.ttf"; sourceTree = "<group>"; };
+		310DA94C047845AC977ED37E /* Kanit-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Kanit-ExtraBold.ttf"; path = "../src/shared/assets/fonts/Kanit-ExtraBold.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-nickNewArchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nickNewArchApp.debug.xcconfig"; path = "Target Support Files/Pods-nickNewArchApp/Pods-nickNewArchApp.debug.xcconfig"; sourceTree = "<group>"; };
+		47A9F7E38DD34AFF84603233 /* Sarabun-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Sarabun-Medium.ttf"; path = "../src/shared/assets/fonts/Sarabun-Medium.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-nickNewArchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nickNewArchApp.release.xcconfig"; path = "Target Support Files/Pods-nickNewArchApp/Pods-nickNewArchApp.release.xcconfig"; sourceTree = "<group>"; };
+		5893036F39C84AF99D1E7B1A /* Sarabun-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Sarabun-Bold.ttf"; path = "../src/shared/assets/fonts/Sarabun-Bold.ttf"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-nickNewArchApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nickNewArchApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71FFD015B7A348F0B2CB8ED4 /* Kanit-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Kanit-Italic.ttf"; path = "../src/shared/assets/fonts/Kanit-Italic.ttf"; sourceTree = "<group>"; };
+		742D29B0FFBA47EDBBCBFAFA /* Kanit-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Kanit-Bold.ttf"; path = "../src/shared/assets/fonts/Kanit-Bold.ttf"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = nickNewArchApp/AppDelegate.swift; sourceTree = "<group>"; };
+		790F0312477C4F57B6F1A00B /* Kanit-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Kanit-Regular.ttf"; path = "../src/shared/assets/fonts/Kanit-Regular.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = nickNewArchApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		847AD234AEEE48CF9E4108E8 /* Sarabun-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Sarabun-ExtraBold.ttf"; path = "../src/shared/assets/fonts/Sarabun-ExtraBold.ttf"; sourceTree = "<group>"; };
+		87415078F8A242D4A144D517 /* Sarabun-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Sarabun-Italic.ttf"; path = "../src/shared/assets/fonts/Sarabun-Italic.ttf"; sourceTree = "<group>"; };
+		8B69467E0D3243478E955084 /* Kanit-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Kanit-Black.ttf"; path = "../src/shared/assets/fonts/Kanit-Black.ttf"; sourceTree = "<group>"; };
+		9D044B45E57C4C3BBE615C5B /* Kanit-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Kanit-SemiBold.ttf"; path = "../src/shared/assets/fonts/Kanit-SemiBold.ttf"; sourceTree = "<group>"; };
+		DC4B6C6A930347268A87BEF4 /* Sarabun-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Sarabun-Light.ttf"; path = "../src/shared/assets/fonts/Sarabun-Light.ttf"; sourceTree = "<group>"; };
+		DE2E6359F69D480293B5B561 /* Sarabun-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Sarabun-Thin.ttf"; path = "../src/shared/assets/fonts/Sarabun-Thin.ttf"; sourceTree = "<group>"; };
+		E379CAB006C049FA81E8911F /* Sarabun-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Sarabun-ExtraLight.ttf"; path = "../src/shared/assets/fonts/Sarabun-ExtraLight.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EEFCEBC49EAE4C41B6E71D5E /* Kanit-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Kanit-Medium.ttf"; path = "../src/shared/assets/fonts/Kanit-Medium.ttf"; sourceTree = "<group>"; };
+		F02F1E434BA1457081784FCC /* Kanit-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Kanit-Light.ttf"; path = "../src/shared/assets/fonts/Kanit-Light.ttf"; sourceTree = "<group>"; };
+		F613609334764C5CB6543444 /* Kanit-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Kanit-Thin.ttf"; path = "../src/shared/assets/fonts/Kanit-Thin.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +111,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				8F0F9563BC6B453FADCA2A4C /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -87,6 +124,32 @@
 				13B07F961A680F5B00A75B9A /* nickNewArchApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8F0F9563BC6B453FADCA2A4C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				87415078F8A242D4A144D517 /* Sarabun-Italic.ttf */,
+				9D044B45E57C4C3BBE615C5B /* Kanit-SemiBold.ttf */,
+				8B69467E0D3243478E955084 /* Kanit-Black.ttf */,
+				790F0312477C4F57B6F1A00B /* Kanit-Regular.ttf */,
+				71FFD015B7A348F0B2CB8ED4 /* Kanit-Italic.ttf */,
+				847AD234AEEE48CF9E4108E8 /* Sarabun-ExtraBold.ttf */,
+				E379CAB006C049FA81E8911F /* Sarabun-ExtraLight.ttf */,
+				DE2E6359F69D480293B5B561 /* Sarabun-Thin.ttf */,
+				F613609334764C5CB6543444 /* Kanit-Thin.ttf */,
+				310DA94C047845AC977ED37E /* Kanit-ExtraBold.ttf */,
+				101A3BF65BE74D22944DE8EE /* Sarabun-Regular.ttf */,
+				742D29B0FFBA47EDBBCBFAFA /* Kanit-Bold.ttf */,
+				5893036F39C84AF99D1E7B1A /* Sarabun-Bold.ttf */,
+				2EAB919B8BAD4E958DEFD286 /* Sarabun-SemiBold.ttf */,
+				F02F1E434BA1457081784FCC /* Kanit-Light.ttf */,
+				47A9F7E38DD34AFF84603233 /* Sarabun-Medium.ttf */,
+				DC4B6C6A930347268A87BEF4 /* Sarabun-Light.ttf */,
+				EEFCEBC49EAE4C41B6E71D5E /* Kanit-Medium.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -161,6 +224,24 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3725CF9DCF08FBD410B84B6E /* PrivacyInfo.xcprivacy in Resources */,
+				E9F01BE9F46A4F0A9961D648 /* Sarabun-Italic.ttf in Resources */,
+				DAB8686D61C8470FA296B27B /* Kanit-SemiBold.ttf in Resources */,
+				86EBF0190DDE486D9550174C /* Kanit-Black.ttf in Resources */,
+				E07A15D157E24B63987942B8 /* Kanit-Regular.ttf in Resources */,
+				7E8C0FFEDD7C49B48E1C4B65 /* Kanit-Italic.ttf in Resources */,
+				CF15E02F34B249B2916B6270 /* Sarabun-ExtraBold.ttf in Resources */,
+				DDCB58C199E7496395912937 /* Sarabun-ExtraLight.ttf in Resources */,
+				7BFD5DFB018B445F80121234 /* Sarabun-Thin.ttf in Resources */,
+				1326A74C3CB44307AEF5781E /* Kanit-Thin.ttf in Resources */,
+				438B768E96CE45A79EB95B57 /* Kanit-ExtraBold.ttf in Resources */,
+				4817DC7711E8450A9F098043 /* Sarabun-Regular.ttf in Resources */,
+				1DC56DDA4C5E404CAE1AB063 /* Kanit-Bold.ttf in Resources */,
+				D26C3798CF9146BF8AAC2E60 /* Sarabun-Bold.ttf in Resources */,
+				0B718BE9FBF149D4943453F8 /* Sarabun-SemiBold.ttf in Resources */,
+				11FE3C5721014C7CB5E4F7D7 /* Kanit-Light.ttf in Resources */,
+				D6C9CF1D7AAD495983DCC356 /* Sarabun-Medium.ttf in Resources */,
+				80B9F203DF27446FAA78F2A4 /* Sarabun-Light.ttf in Resources */,
+				85214B9DE0954884A081C226 /* Kanit-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,13 +272,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-nickNewArchApp/Pods-nickNewArchApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-nickNewArchApp/Pods-nickNewArchApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -234,13 +311,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-nickNewArchApp/Pods-nickNewArchApp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-nickNewArchApp/Pods-nickNewArchApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
