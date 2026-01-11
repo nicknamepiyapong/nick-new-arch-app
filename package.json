@@ -5,9 +5,19 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "ios-devices": "yarn ios --list-devices",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "clean-app": "yarn clean-npm && yarn clean-ios && yarn clean-pod && yarn clean-gradlew",
+    "clean-npm": "rm -rf node_modules/ && yarn",
+    "clean-ios": "rm -rf ios/build && rm -rf ~/Library/Developer/Xcode/DerivedData",
+    "clean-pod": "cd ios && rm -rf Pods Podfile.lock && RCT_NEW_ARCH_ENABLED=1 pod install && cd ..",
+    "clean-gradlew": "rm -rf android/app/.cxx && cd android && ./gradlew clean && rm -rf ~/.gradle && rm -rf ~/.gradle/caches/*",
+    "clean-metro": "yarn cache clean &&  yarn start --reset-cache",
+    "build:android": "cd ./android && ./gradlew clean && ./gradlew bundleRelease --warning-mode=all && yarn sentry:android",
+    "build:android-apk": "cd ./android && ./gradlew clean && ./gradlew assembleRelease && yarn sentry:android",
+    "release-android": "yarn android --mode release"
   },
   "dependencies": {
     "@react-native/new-app-screen": "0.83.1",
