@@ -3,11 +3,13 @@
  */
 
 import React from 'react'
-import { StatusBar, StyleSheet, useColorScheme, Text, View } from 'react-native'
+import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native'
 import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context'
+
+import { HomeScreen } from '@/features/appHome'
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark'
@@ -25,9 +27,7 @@ function AppContent() {
 
   return (
     <View style={[styles.container, { paddingTop: safeAreaInsets.top }]}>
-      <View>
-        <Text>Home Screen</Text>
-      </View>
+      <HomeScreen />
     </View>
   )
 }

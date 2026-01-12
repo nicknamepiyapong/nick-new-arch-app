@@ -1,97 +1,287 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native (New Arch Ready)
+# Feature-Driven Modular Architecture
+Also known as Feature-First Architecture, Feature-Based Architecture, Modular-Feature Architecture
 
-# Getting Started
+This project is a **React Native (CLI)** application designed with a **feature-first, scalable architecture**.
+The goal is to keep the codebase **clean, enforceable, and maintainable** as the app and team grow.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 🧠 Core Principles
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- **Feature-Driven Modular Architecture with Enforced Boundaries**
+- **Clear ownership**: each feature owns its UI, logic, and business rules
+- **Shared ≠ Business**: shared layer contains infrastructure only
+- **Strict boundaries** enforced by ESLint
+- **System features** (e.g. Auth) are allowed cross-feature access by design
+- **Ready for scale** (Redux / Saga / New Architecture)
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+---
 
-```sh
-# Using npm
-npm start
+## 📁 Project Structure
 
-# OR using Yarn
-yarn start
+```txt
+src/
+├── app/
+│   ├── App.tsx              # App bootstrap / root
+│   └── index.ts
+│
+├── features/
+│   ├── appHome/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── screens/
+│   │   └── index.ts
+│   │
+│   ├── auth/
+│   │   ├── components/      # SignIn / Auth-related UI components
+│   │   ├── hooks/           # useAuth, useLogin, useLogout, etc.
+│   │   ├── screens/         # SignInScreen, ForgotPasswordScreen
+│   │   ├── services/        # Auth business logic (login, logout, me)
+│   │   │   └── authService.ts
+│   │   └── index.ts
+│   │
+│   └── setting/
+│       ├── components/
+│       │   └── SettingButton/
+│       ├── hooks/
+│       │   └── useLogout.ts
+│       ├── screens/
+│       │   └── SettingScreen.tsx
+│       └── index.ts
+│
+├── shared/
+│   ├── assets/
+│   │   ├── fonts/
+│   │   ├── images/
+│   │   └── index.ts
+│   │
+│   ├── components/
+│   │   └── common/
+│   │       └── BaseView.tsx
+│   │
+│   ├── hooks/
+│   │   └── useMount.ts
+│   │
+│   ├── services/
+│   │   ├── httpClient.ts
+│   │   ├── authToken.ts
+│   │   ├── logger.ts
+│   │   └── index.ts
+│   │
+│   ├── theme/
+│   │   ├── colors.ts
+│   │   ├── fonts.ts
+│   │   ├── fontSizes.ts
+│   │   ├── lineHeight.ts
+│   │   ├── space.ts
+│   │   ├── typography.ts
+│   │   └── index.ts
+│   │
+│   └── utils/
+│       └── isEmpty.ts
 ```
 
-## Step 2: Build and run your app
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+## ⚙️ Environment Requirements
+
+> ❗ This project **requires Node.js >= 20**
+
+- **Node.js:** `>= 20.x` (LTS recommended)
+- **Yarn:** `3.6.4` (via Corepack)
+- **React Native CLI** (no Expo)
+
+### Why Node >= 20?
+
+- Required by modern **Metro** internals
+- Required by **@react-native/debugger-frontend**
+- Compatible with **New Architecture (Fabric / TurboModules)**
+- Avoids known issues in Node 18 and earlier
+
+### Check your Node version
+
+```bash
+node -v
+```
+
+If your Node version is below 20, upgrade using nvm:
+
+```bash
+nvm install 20
+nvm use 20
+nvm alias default 20
+```
+
+## 📱 Prerequisites
+
+### iOS (macOS only)
+
+- Xcode (latest stable)
+- CocoaPods  
+  ```bash
+  sudo gem install cocoapods
+  ```
 
 ### Android
 
-```sh
-# Using npm
-npm run android
+- Android Studio
+- Android SDK (API 34+ recommended)
+- `ANDROID_HOME` properly configured
 
-# OR using Yarn
-yarn android
+---
+
+## 📦 1. Install Dependencies
+
+After cloning the repository:
+
+```bash
+git clone <repo-url>
+cd <your-project-folder>
 ```
 
-### iOS
+Enable Corepack and install dependencies:
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+```bash
+corepack enable
+yarn set version 3.6.4
+corepack prepare yarn@3.6.4 --activate
+yarn install
 ```
 
-Then, and every time you update your native dependencies, run:
+> **Note**: This project uses **Yarn Berry (v3)**.  
+> **Do NOT** use `npm install`.
 
-```sh
-bundle exec pod install
+---
+
+## 🍎 2. iOS Setup (First Time)
+
+Install CocoaPods:
+
+```bash
+cd ios
+RCT_NEW_ARCH_ENABLED=1 pod install
+cd ..
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+New Architecture is enabled by default.
 
-```sh
-# Using npm
-npm run ios
+If you encounter build issues, try:
 
-# OR using Yarn
+```bash
+yarn clean-ios
+yarn clean-pod
+```
+
+Run iOS App:
+
+```bash
 yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+To list available devices/simulators:
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+```bash
+yarn ios-devices
+```
 
-## Step 3: Modify your app
+---
 
-Now that you have successfully run the app, let's make changes!
+## 🤖 3. Android Setup (First Time)
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+Make sure an emulator or device is running, then:
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+```bash
+yarn android
+```
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+If you encounter build or C++ issues:
 
-## Congratulations! :tada:
+```bash
+yarn clean-gradlew
+```
 
-You've successfully run and modified your React Native App. :partying_face:
+---
 
-### Now what?
+## 🧹 Common Clean Commands
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+This project provides several clean scripts for common issues:
 
-# Troubleshooting
+```bash
+yarn clean-app       # Clean everything
+yarn clean-npm       # Reinstall node_modules
+yarn clean-ios       # Clean Xcode build cache
+yarn clean-pod       # Reinstall CocoaPods
+yarn clean-gradlew   # Clean Android build & Gradle cache
+yarn clean-metro     # Reset Metro cache
+```
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+> Use these only when needed (e.g. after dependency or native changes).
 
-# Learn More
+---
 
-To learn more about React Native, take a look at the following resources:
+## ▶️ Running the App (Daily Development)
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Start Metro manually (optional):
+
+```bash
+yarn start
+```
+
+Run platforms:
+
+```bash
+yarn ios
+yarn android
+```
+
+---
+
+## 🧪 Lint & Test
+
+```bash
+yarn lint
+yarn test
+```
+
+---
+
+## 🏗 Build Commands
+
+### Android (Release)
+
+```bash
+yarn build:android
+yarn build:android-apk
+yarn release-android
+```
+
+> iOS release builds are handled via Xcode / CI.
+
+---
+
+## ⚠️ Notes & Tips
+
+- Fonts are registered via `react-native.config.js`.
+- If new fonts are added:
+  ```bash
+  npx react-native-asset
+  ```
+  
+- If fonts do not appear on iOS:
+  ```bash
+  yarn clean-ios
+  yarn ios
+  ```
+
+- Do **not** modify files under `shared/` — business logic lives there.
+- Feature boundaries are enforced by ESLint.
+
+---
+
+## 🆘 Troubleshooting
+
+| Issue | Command |
+|-------|---------|
+| Metro cache issues | `yarn clean-metro` |
+| iOS build stuck / fonts not updated | `yarn clean-ios && yarn ios` |
+| Android CMake / NDK issues | `yarn clean-gradlew` |
